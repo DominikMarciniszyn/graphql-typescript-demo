@@ -1,0 +1,39 @@
+{
+  "name": "graphql-typescript-demo",
+  "version": "1.0.0",
+  "description": "Demo application, simple CRUD uses graphql and typescript",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon -w src --ext ts --exec ts-node backend/src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DominikMarciniszyn/graphql-typescript-demo.git"
+  },
+  "keywords": [
+    "graphql",
+    "typescript",
+    "nodejs",
+    "typeorm"
+  ],
+  "author": "Rouch",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DominikMarciniszyn/graphql-typescript-demo/issues"
+  },
+  "homepage": "https://github.com/DominikMarciniszyn/graphql-typescript-demo#readme",
+  "devDependencies": {
+    "nodemon": "2.0.3",
+    "ts-node": "8.9.1",
+    "typescript": "3.8.3"
+  },
+  "dependencies": {
+    "apollo-server": "2.12.0",
+    "graphql": "14.1.1",
+    "reflect-metadata": "0.1.13",
+    "sqlite3": "4.2.0",
+    "type-graphql": "0.17.6",
+    "typeorm": "0.2.24",
+    "typeorm-encrypted": "0.5.4"
+  }
+}
