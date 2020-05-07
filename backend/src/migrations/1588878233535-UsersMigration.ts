@@ -1,4 +1,4 @@
-import { MigrationInterface, QueryRunner } from "typeorm";
+import { MigrationInterface, QueryRunner, getRepository } from "typeorm";
 import { UserSeed } from '../seeds/user.seed';
 
 
