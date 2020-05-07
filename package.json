@@ -4,7 +4,9 @@
   "description": "Demo application, simple CRUD uses graphql and typescript",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon -w src --ext ts --exec ts-node backend/src/index.ts"
+    "start": "nodemon -w src --ext ts --exec ts-node backend/src/index.ts",
+    "migration-create": ".\\node_modules\\.bin\\typeorm migration:create -n UsersMigration",
+    "migration-run": ".\\node_modules\\.bin\\typeorm migration:run"
   },
   "repository": {
     "type": "git",

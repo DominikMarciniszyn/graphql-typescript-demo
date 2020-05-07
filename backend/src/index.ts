@@ -7,6 +7,8 @@ import { UserResolver } from './resolvers/user_resolver';
 
 async function runServer() {
   const connection = await createConnection();
+  connection.runMigrations();
+
   const schema = await buildSchema({
     resolvers: [UserResolver]
   });
